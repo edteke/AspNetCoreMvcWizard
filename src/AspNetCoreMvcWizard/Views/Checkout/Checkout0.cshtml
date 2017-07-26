@@ -1,0 +1,14 @@
+
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<h2>Checkout Step0</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <hr />
+    <input type="submit" name="Go" value="Next" class="btn btn-primary" />
+}
